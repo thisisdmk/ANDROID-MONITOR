@@ -1,0 +1,114 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal">
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.AppCompatTextView
+			style="@style/EventDetailsPropertyLabel"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/event_details_app_name_label" />
+
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/text_view_event_details_appname"
+			style="@style/EventDetailsPropertyValue"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			tools:text="AppMonitor" />
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.AppCompatTextView
+			style="@style/EventDetailsPropertyLabel"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/event_details_version_label" />
+
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/text_view_event_details_version"
+			style="@style/EventDetailsPropertyValue"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			tools:text="1.0-DEBUG" />
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.AppCompatTextView
+			style="@style/EventDetailsPropertyLabel"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/event_details_package_name_label" />
+
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/text_view_event_details_package_name"
+			style="@style/EventDetailsPropertyValue"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			tools:text="com.android.package" />
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.AppCompatTextView
+			style="@style/EventDetailsPropertyLabel"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/event_details_package_sha1_label" />
+
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/text_view_event_details_sha1"
+			style="@style/EventDetailsPropertyValue"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			tools:text="11:22:33:44:55:66:77:88:99:00" />
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.AppCompatTextView
+			style="@style/EventDetailsPropertyLabel"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@string/event_details_date_label" />
+
+		<androidx.appcompat.widget.AppCompatTextView
+			android:id="@+id/text_view_event_details_date"
+			style="@style/EventDetailsPropertyValue"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			tools:text="10.10.2010 10:10" />
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.AppCompatTextView
+			style="@style/EventDetailsPropertyLabel"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="" />
+
+		<androidx.appcompat.widget.AppCompatButton
+			android:id="@+id/button_event_details_launch"
+			style="@style/EventDetailsPropertyValue"
+			android:layout_width="0dp"
+			android:text="@string/event_details_launch_button_caption"
+			android:layout_height="wrap_content" />
+	</TableRow>
+</TableLayout>

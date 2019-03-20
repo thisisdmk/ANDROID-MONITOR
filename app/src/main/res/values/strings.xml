@@ -1,0 +1,11 @@
+<resources>
+	<string name="app_name">AppMonitor</string>
+	<string name="notification_application_update_title">Application updated</string>
+	<string name="event_details_app_name_label">Название приложения</string>
+	<string name="event_details_version_label">Версия</string>
+	<string name="event_details_package_name_label">Имя пакета</string>
+	<string name="event_details_date_label">Дата и время</string>
+	<string name="event_details_launch_button_caption">Открыть приложение</string>
+	<string name="event_details_package_sha1_label">SHA-1</string>
+	<string name="history_header">История установок</string>
+</resources>
