@@ -3,6 +3,7 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	package="com.testing.android.appmonitor">
 
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 	<application
 		android:name=".MonitorApp"
 		android:allowBackup="false"
@@ -20,6 +21,7 @@
 		</activity>
 		<receiver
 			android:name=".presentation.updatejob.ApplicationUpdateBroadcastReceiver"
+			android:enabled="true"
 			android:exported="true">
 			<intent-filter>
 				<action android:name="android.intent.action.PACKAGE_REPLACED" />
@@ -28,9 +30,13 @@
 				<data android:scheme="package" />
 			</intent-filter>
 		</receiver>
+
 		<service
 			android:name=".presentation.updatejob.ApplicationUpdateJobService"
 			android:exported="true"
+			android:permission="android.permission.BIND_JOB_SERVICE" />
+		<service
+			android:name=".presentation.updatejob.ApplicationUpdatePollingService"
 			android:permission="android.permission.BIND_JOB_SERVICE" />
 	</application>
 </manifest>
