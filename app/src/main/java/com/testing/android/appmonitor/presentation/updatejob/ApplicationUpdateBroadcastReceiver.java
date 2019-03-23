@@ -14,7 +14,7 @@ import static android.content.Intent.ACTION_PACKAGE_REPLACED;
 
 final public class ApplicationUpdateBroadcastReceiver extends BroadcastReceiver {
 
-    private static final long ADD_THEN_REPLACE_DELTA = 2000L;
+    private static final long ADD_THEN_REPLACE_DELTA = 5000L;
     private static HashMap<String, Long> ADD_TIMESTAMPS = new HashMap<>();
 
     @Override
